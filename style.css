@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+:root {
+    overflow: hidden;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar-left {
+background-image: url("image.jpg");
+width: 60%;
+height: 100vh;
+background-size: 500px;
+background-repeat: no-repeat;
+
+display: flex;
+
+align-items: center;
+color: white;
+}
+.content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+    background-color: #000;
+  
+   padding: 50px 110px;
+  
+opacity: 0.5;    
+    font-size: 70px;
+    font-family: "Lilita One", serif;
+}
+.sidebar-right {
+    display: flex;
+    flex-direction: column;
+ 
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+   
+
+}
+.heading{
+
+    height: 5%;
+    font-weight: 500;
+    font-size: 20px;
+  margin-bottom: 20px;
+  padding: 40px 40px 100px 10px;
+    gap: 20px;
+    margin-left: 20px;
+    display: flex;
+flex-direction: column;
+
+}
+.heading p {
+    margin-top: 10px;
+}
+.forminput {
+    margin-top: 0px;
+    background-color: white;
+    height: 30%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+legend{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   gap: 60px;
+    padding: 20px;
+}
+.left,.right {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+   
+}
+label {
+    display: block;
+    text-transform: uppercase;
+    font-family: Courier, monospace;
+    font-size: 0.8em;
+    margin-bottom: 2px;
+}
+input:not([type="submit"]) {
+    font-family: 'Courier New', Courier;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+
+input:not([type="submit"]):focus {
+    border: 1px solid lightblue;
+    box-shadow: 4px 4px 4px lightblue;
+}
+
+input:not([type="submit"]):valid {
+    border: 1px solid green;
+}
+input[type='submit'] {
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: white;
+}
+.bottom {
+    padding: 20px;
+    margin-left: 20px;
+    overflow: scroll;
+    
+}
+a {
+
+    text-decoration: none;
+    color: black;
+}
+.bottom input {
+    margin-bottom: 10px;
+}
+#password:invalid,
+#confirm-password:invalid {
+   border: 1px  solid red;
+   border-radius: 5px;
+}
